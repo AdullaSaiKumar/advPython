@@ -11,5 +11,8 @@ RUN pip3 install psycopg2 pandas numpy scipy scikit-learn lxml spacy pandasql sq
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 
+RUN echo 'alias ll="ls -altrh"' >> ~/.bashrc
+RUN echo 'export PATH=.:${PATH}' >> ~/.bashrc
+
 
 
